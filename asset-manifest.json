@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Contact-Manager/static/css/main.74e86cae.css",
+    "main.js": "/Contact-Manager/static/js/main.01603038.js",
+    "static/media/notFound.gif": "/Contact-Manager/static/media/notFound.8a3fe9fd54d21c85d260.gif",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/Contact-Manager/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/fontawesome-webfont.eot": "/Contact-Manager/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/Contact-Manager/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/Contact-Manager/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/Contact-Manager/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/Cube-1s-200px.gif": "/Contact-Manager/static/media/Cube-1s-200px.a1a926e53e0fe1aa2643.gif",
+    "static/media/MahdiHasanzadeh.jpg": "/Contact-Manager/static/media/MahdiHasanzadeh.e68897a0031aaf86b6bb.jpg",
+    "index.html": "/Contact-Manager/index.html",
+    "main.74e86cae.css.map": "/Contact-Manager/static/css/main.74e86cae.css.map",
+    "main.01603038.js.map": "/Contact-Manager/static/js/main.01603038.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.74e86cae.css",
+    "static/js/main.01603038.js"
+  ]
+}
