@@ -58,10 +58,15 @@ const Main = () => {
 
   //* How to add Contact with use of fetch (POST)
 
+  const url =
+    "https://my-json-server.typicode.com/Mahdi-Hasanzadeh/server/contacts";
+
+  const groupsURL =
+    "https://my-json-server.typicode.com/Mahdi-Hasanzadeh/server/groups";
   async function addContact(contact) {
     setLoading((prevData) => true);
     try {
-      const response = await fetch("http://localhost:9000/contacts", {
+      const response = await fetch(url, {
         method: "POST",
         headers: {
           "Content-type": "application/json",
@@ -91,16 +96,13 @@ const Main = () => {
   const updateContact = async (contact, contactId) => {
     setLoading((prevData) => true);
     try {
-      const response = await fetch(
-        `http://localhost:9000/contacts/${contactId}`,
-        {
-          method: "PUT",
-          headers: {
-            "Content-type": "application/json",
-          },
-          body: JSON.stringify(contact),
-        }
-      );
+      const response = await fetch(`${url}/${contactId}`, {
+        method: "PUT",
+        headers: {
+          "Content-type": "application/json",
+        },
+        body: JSON.stringify(contact),
+      });
 
       if (response.status === 200) {
         const updatedContact = await response.json();
@@ -180,7 +182,7 @@ const Main = () => {
     setLoading((prevData) => false);
     toast.error("Contact Deleted Successfully");
     try {
-      const response = await fetch("http://localhost:9000/contacts/" + id, {
+      const response = await fetch(url + "/" + id, {
         method: "DELETE",
       });
       if (response.status !== 200) {
@@ -214,8 +216,8 @@ const Main = () => {
     setLoading((prevData) => true);
     const fetchData = async () => {
       try {
-        const resp1 = await fetch("http://localhost:9000/groups");
-        const resp = await fetch("http://localhost:9000/contacts");
+        const resp1 = await fetch(groupsURL);
+        const resp = await fetch(url);
 
         const groupData = await resp1.json();
         const data = await resp.json();
